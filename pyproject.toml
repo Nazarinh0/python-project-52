@@ -8,6 +8,10 @@ packages = [{include = "hexlet_code"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8"
+django = "^4.2"
+django-extensions = "^3.2.1"
+python-dotenv = "^1.0.0"
+dj-database-url = "^1.3.0"
 
 
 [build-system]
