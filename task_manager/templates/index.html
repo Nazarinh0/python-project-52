@@ -12,7 +12,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -30,7 +31,8 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
   </head>
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
