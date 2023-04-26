@@ -34,14 +34,7 @@
   <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Task Manager</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Users</a>
-        <a class="nav-link" href="#">Log in</a>
-        <a class="nav-link" href="#">Sign up</a>
-      </nav>
-    </div>
+    {% include 'navbar.html' %}
   </header>
 
       {% block content %}
@@ -49,9 +42,7 @@
 
 
   <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p><a href="https://github.com/Nazarinh0">Nazarinh0</a> project on <a href="https://hexlet.io">Hexlet</a> python course</p>
-    </div>
+     {% include 'footer.html' %}
   </footer>
 </div>
 </body>
