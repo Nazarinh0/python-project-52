@@ -2,8 +2,12 @@
 {% load bootstrap5 %}
 {% load i18n %}
 
+{% block title %}
+    {% trans 'Task Manager' %}
+{% endblock %}
+
 {% block content %}
-  <main role="main" class="inner cover">
+  <main role="main" class="text-center inner cover">
     <h1 class="cover-heading">{% trans "Welcome!" %}</h1>
     <p class="lead">
       {% trans "Simple and flexible task management web application" %}
