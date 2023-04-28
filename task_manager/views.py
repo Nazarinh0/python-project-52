@@ -21,3 +21,8 @@ class UserLoginView(SuccessMessageMixin, LoginView):
         'title': _('Login'),
         'button_text': _('Login'),
     }
+
+
+class UserLogoutView(SuccessMessageMixin, LogoutView):
+    next_page = reverse_lazy('index')
+    success_message = _('You are logged out')
