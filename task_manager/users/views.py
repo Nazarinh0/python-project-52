@@ -1,11 +1,10 @@
-from django.shortcuts import render
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from django.contrib.messages.views import SuccessMessageMixin
-from task_manager.users.forms import UserForm, UserUpdateForm
+from task_manager.users.forms import UserForm
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse_lazy
 from django.contrib.auth import get_user_model
-from task_manager.users.mixins import UserCheckMixin
+from task_manager.mixins import UserCheckMixin
 
 
 User = get_user_model()
@@ -32,7 +31,7 @@ class UserIndexView(ListView):
 
 class UserUpdateView(UserCheckMixin, SuccessMessageMixin, UpdateView):
     model = User
-    form_class = UserUpdateForm
+    form_class = UserForm
     template_name = 'form.html'
 
     permission_message = _("You can't update other users")
