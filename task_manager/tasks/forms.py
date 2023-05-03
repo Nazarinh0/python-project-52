@@ -3,5 +3,6 @@ from task_manager.tasks.models import Task
 
 
 class TaskForm(forms.ModelForm):
-    model = Task
-    fields = ('name', 'description', 'status', 'assignee')
+    class Meta:
+        model = Task
+        fields = ('name', 'description', 'status', 'assignee')
