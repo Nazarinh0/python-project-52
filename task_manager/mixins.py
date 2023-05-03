@@ -32,3 +32,15 @@ class DeleteProtectionMixin:
         except ProtectedError:
             messages.error(request, self.protected_message)
             return redirect(self.protected_url)
+
+
+class DeleteAuthorCheckMixin(UserPassesTestMixin):
+    permission_message = None
+    permission_url = None
+
+    def test_func(self):
+        return self.get_object().author == self.request.user
+
+    def handle_no_permission(self):
+        messages.error(self.request, self.permission_message)
+        return redirect(self.permission_url)
