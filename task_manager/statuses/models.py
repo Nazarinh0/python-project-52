@@ -10,12 +10,7 @@ class Status(models.Model):
     )
     created_at = models.DateTimeField(
         auto_now_add=True,
-        verbose_name=_('Creation Date'),
     )
 
     def __str__(self):
         return self.name
-
-    class Meta:
-        verbose_name = _('Status')
-        verbose_name_plural = _('Statuses')
