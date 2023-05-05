@@ -17,7 +17,7 @@ class StatusesIndexView(LoginRequiredMixin, ListView):
     extra_context = {'title': _('Statuses')}
 
 
-class StatusCreateView(LoginRequiredMixin, CreateView):
+class StatusCreateView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     template_name = 'form.html'
     form_class = StatusForm
 
@@ -30,7 +30,7 @@ class StatusCreateView(LoginRequiredMixin, CreateView):
     }
 
 
-class StatusUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class StatusUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Status
     template_name = 'form.html'
     form_class = StatusForm
@@ -44,16 +44,16 @@ class StatusUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     }
 
 
-class StatusDeleteView(LoginRequiredMixin, DeleteProtectionMixin,
-                       SuccessMessageMixin, DeleteView):
+class StatusDeleteView(SuccessMessageMixin, LoginRequiredMixin, 
+                       DeleteProtectionMixin, DeleteView):
     model = Status
     template_name = 'statuses/delete.html'
 
     success_url = reverse_lazy('statuses_index')
     success_message = _('Status deleted successfully')
 
-    protected_message = _("You can't delete this status, because some task is using it")
     protected_url = reverse_lazy('statuses_index')
+    protected_message = _("You can't delete this status, because some task is using it")
 
     extra_context = {
         'title': _('Deleting status'),
