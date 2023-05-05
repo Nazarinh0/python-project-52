@@ -23,9 +23,9 @@
 			<td>{{ label.created_at }}</td>
 	      	<td>
 				<a class="btn btn-info btn-sm mr-2" href="{% url 'label_update' label.id %}">
-				{% translate 'Edit' %}</a>
+				{% trans 'Edit' %}</a>
 				<a class="btn btn-danger btn-sm" href="{% url 'label_delete' label.id %}">
-				{% translate 'Delete' %}</a>
+				{% trans 'Delete' %}</a>
 	      	</td>
 	    </tr>
 	    {% endfor %}
