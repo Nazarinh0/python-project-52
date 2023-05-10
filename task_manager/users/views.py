@@ -54,7 +54,7 @@ class UserDeleteView(SuccessMessageMixin, DeleteView):
     permission_message = _("You can't delete other users")
     no_login_message = _('You are not logged in! Please log in')
     permission_url = reverse_lazy("users_index")
-    protected_message = _("User can't be deleted because he have assigned tasks")
+    protected_message = _("User can't be deleted because he have assigned tasks")  # noqa E501
     protected_url = reverse_lazy('users')
 
     success_url = reverse_lazy('user_index')

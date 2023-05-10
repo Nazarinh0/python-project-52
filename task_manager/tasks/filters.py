@@ -12,12 +12,28 @@ User = get_user_model()
 
 class TaskFilter(FilterSet):
     statuses = Status.objects.all()
-    status = ModelChoiceFilter(queryset=statuses, label=_('Status'), field_name='status')
+    status = ModelChoiceFilter(
+        queryset=statuses,
+        label=_('Status'),
+        field_name='status'
+    )
     labels = Label.objects.all()
-    label = ModelChoiceFilter(queryset=labels, label=_('Label'), field_name='labels')
+    label = ModelChoiceFilter(
+        queryset=labels,
+        label=_('Label'),
+        field_name='labels'
+    )
     assignees = User.objects.all()
-    assignee = ModelChoiceFilter(queryset=assignees, label=_('Assignee'), field_name='assignee')
-    owned_tasks = BooleanFilter(method='get_task_owner', widget=forms.CheckboxInput(), label=_('Only my tasks'))
+    assignee = ModelChoiceFilter(
+        queryset=assignees,
+        label=_('Assignee'),
+        field_name='assignee'
+    )
+    owned_tasks = BooleanFilter(
+        method='get_task_owner',
+        widget=forms.CheckboxInput(),
+        label=_('Only my tasks')
+    )
 
     def get_task_owner(self, queryset, name, value):
         if value:

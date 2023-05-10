@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 from django_filters.views import FilterView
@@ -6,7 +5,6 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from task_manager.mixins import DeleteAuthorCheckMixin
-from task_manager.users.models import User
 from .models import Task
 from .forms import TaskForm
 from .filters import TaskFilter
@@ -45,7 +43,7 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
         'title': _('Create task'),
         'button_text': _('Create'),
     }
-    
+
     def form_valid(self, form):
         """
         Set current user as the task's author.
@@ -70,7 +68,7 @@ class TaskUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 
 class TaskDeleteView(LoginRequiredMixin, DeleteAuthorCheckMixin,
-                       SuccessMessageMixin, DeleteView):
+                     SuccessMessageMixin, DeleteView):
     model = Task
     template_name = 'tasks/delete.html'
 

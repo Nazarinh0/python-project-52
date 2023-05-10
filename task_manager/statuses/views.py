@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 from django.contrib.messages.views import SuccessMessageMixin
@@ -44,7 +43,7 @@ class StatusUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     }
 
 
-class StatusDeleteView(SuccessMessageMixin, LoginRequiredMixin, 
+class StatusDeleteView(SuccessMessageMixin, LoginRequiredMixin,
                        DeleteProtectionMixin, DeleteView):
     model = Status
     template_name = 'statuses/delete.html'
@@ -53,7 +52,7 @@ class StatusDeleteView(SuccessMessageMixin, LoginRequiredMixin,
     success_message = _('Status deleted successfully')
 
     protected_url = reverse_lazy('statuses_index')
-    protected_message = _("You can't delete this status, because some task is using it")
+    protected_message = _("You can't delete this status, because some task is using it") # noqa E501
 
     extra_context = {
         'title': _('Deleting status'),
