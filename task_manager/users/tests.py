@@ -1,3 +1,9 @@
-from django.test import TestCase
+from django.test import TestCase, Client
+from http import HTTPStatus
+from django.contrib.auth import get_user_model
 
-# Create your tests here.
+User = get_user_model()
+
+
+class UserTest(TestCase):
+    pass
