@@ -27,6 +27,7 @@ class Task(models.Model):
     )
     assignee = models.ForeignKey(
         User,
+        blank=True,
         on_delete=models.PROTECT,
         related_name='assignee',
     )
