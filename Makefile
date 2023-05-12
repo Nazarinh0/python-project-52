@@ -13,7 +13,7 @@ shell:
 lint:
 	@poetry run flake8 task_manager --exclude=migrations,settings.py
 
-test:
+test-coverage:
 	@poetry run coverage run --source='.' manage.py test
 	@poetry run coverage report
 	@poetry run coverage xml
