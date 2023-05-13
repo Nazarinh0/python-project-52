@@ -22,9 +22,9 @@
 			<td>{{ label.name }}</td>
 			<td>{{ label.created_at }}</td>
 	      	<td>
-				<a class="btn btn-info btn-sm mr-2" href="{% url 'label_update' label.id %}">
+				<a class="btn btn-info btn-sm mr-2 edit-button" href="{% url 'label_update' label.id %}">
 				{% trans 'Edit' %}</a>
-				<a class="btn btn-danger btn-sm" href="{% url 'label_delete' label.id %}">
+				<a class="btn btn-danger btn-sm delete-button" href="{% url 'label_delete' label.id %}">
 				{% trans 'Delete' %}</a>
 	      	</td>
 	    </tr>

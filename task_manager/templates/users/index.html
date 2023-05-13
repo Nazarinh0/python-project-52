@@ -22,9 +22,9 @@
 	      <td>{{ user.first_name}} {{ user.last_name}}</td>
 	      <td>{{ user.date_joined }}</td>
 	      <td>
-			<a class="btn btn-info btn-sm mr-2" href="{% url 'user_update' user.id %}">
+			<a class="btn btn-info btn-sm mr-2 edit-button" href="{% url 'user_update' user.id %}">
 			{% trans 'Edit' %}</a>
-			<a class="btn btn-danger btn-sm" href="{% url 'user_delete' user.id %}">
+			<a class="btn btn-danger btn-sm delete-button" href="{% url 'user_delete' user.id %}">
 			{% trans 'Delete' %}</a>
 	      </td>
 	    </tr>

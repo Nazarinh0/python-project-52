@@ -22,9 +22,9 @@
 			<td>{{ status.name }}</td>
 			<td>{{ status.created_at }}</td>
 	      	<td>
-				<a class="btn btn-info btn-sm mr-2" href="{% url 'status_update' status.id %}">
+				<a class="btn btn-info btn-sm mr-2 edit-button" href="{% url 'status_update' status.id %}">
 				{% trans 'Edit' %}</a>
-				<a class="btn btn-danger btn-sm" href="{% url 'status_delete' status.id %}">
+				<a class="btn btn-danger btn-sm delete-button" href="{% url 'status_delete' status.id %}">
 				{% trans 'Delete' %}</a>
 	      	</td>
 	    </tr>

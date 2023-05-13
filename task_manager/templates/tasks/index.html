@@ -29,9 +29,9 @@
             <td>{{ task.assignee }}</td>
 			<td>{{ task.created_at }}</td>
 	      	<td>
-				<a class="btn btn-info btn-sm mr-2" href="{% url 'task_update' task.id %}">
+				<a class="btn btn-info btn-sm mr-2 edit-button" href="{% url 'task_update' task.id %}">
 				{% trans 'Edit' %}</a>
-				<a class="btn btn-danger btn-sm" href="{% url 'task_delete' task.id %}">
+				<a class="btn btn-danger btn-sm delete-button" href="{% url 'task_delete' task.id %}">
 				{% trans 'Delete' %}</a>
 	      	</td>
 	    </tr>
