@@ -57,7 +57,7 @@ class UserDeleteView(SuccessMessageMixin, DeleteView):
     protected_message = _("User can't be deleted because he have assigned tasks")  # noqa E501
     protected_url = reverse_lazy('users')
 
-    success_url = reverse_lazy('user_index')
+    success_url = reverse_lazy('users_index')
     success_message = _('User deleted successfully')
 
     extra_context = {
