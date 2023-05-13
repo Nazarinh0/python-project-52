@@ -120,3 +120,11 @@ body {
   background-color: #8B0000 !important;
   color: white !important;
 }
+
+.create-button {
+  background-color: rgba(71, 70, 70, 0.897) !important;
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+}

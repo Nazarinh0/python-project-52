@@ -3,7 +3,7 @@
 
 {% block content %}
 	<h1 class="my-4 text-left"> {% trans 'Tasks' %} </h1>
-	<a class="btn btn-info btn-sm mr-2" href="{% url 'task_create'%}">
+	<a class="btn btn-info btn-sm mr-2 create-button" href="{% url 'task_create'%}">
 			{% trans 'Create task' %}</a>
 
 {% include 'filter.html' %}
