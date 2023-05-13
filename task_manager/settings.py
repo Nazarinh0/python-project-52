@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
 ROOT_URLCONF = 'task_manager.urls'
@@ -158,3 +159,10 @@ CSRF_TRUSTED_ORIGINS = [
     'https://localhost',
     'https://0.0.0.0',
 ]
+
+ROLLBAR = {
+    'access_token': '385f851005fe44e6a81e047d8761d220',
+    'environment': 'development' if DEBUG else 'production',
+    'code_version': '1.0',
+    'root': BASE_DIR,
+}
