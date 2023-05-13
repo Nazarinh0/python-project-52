@@ -161,7 +161,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ROLLBAR = {
-    'access_token': '385f851005fe44e6a81e047d8761d220',
+    'access_token': os.getenv('ACCESS_TOKEN'),
     'environment': 'development' if DEBUG else 'production',
     'code_version': '1.0',
     'root': BASE_DIR,
