@@ -29,7 +29,7 @@ class UsersIndexView(ListView):
     context_object_name = 'users'
 
 
-class UserUpdateView(UserCheckMixin, SuccessMessageMixin, UpdateView):
+class UserUpdateView(SuccessMessageMixin, UserCheckMixin, UpdateView):
     model = User
     form_class = UserForm
     template_name = 'form.html'
