@@ -53,7 +53,7 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class TaskUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class TaskUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Task
     template_name = 'form.html'
     form_class = TaskForm
@@ -67,8 +67,8 @@ class TaskUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     }
 
 
-class TaskDeleteView(LoginRequiredMixin, DeleteAuthorCheckMixin,
-                     SuccessMessageMixin, DeleteView):
+class TaskDeleteView(SuccessMessageMixin, LoginRequiredMixin,
+                     DeleteAuthorCheckMixin, DeleteView):
     model = Task
     template_name = 'tasks/delete.html'
 
