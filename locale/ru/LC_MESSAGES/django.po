@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-15 19:39+0000\n"
+"POT-Creation-Date: 2023-05-15 20:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,7 @@ msgstr "Метка"
 
 #: task_manager/tasks/filters.py:29 task_manager/templates/tasks/index.html:17
 #: task_manager/templates/tasks/show.html:27
-msgid "Assignee"
+msgid "Executor"
 msgstr "Исполнитель"
 
 #: task_manager/tasks/filters.py:35
@@ -148,7 +148,7 @@ msgid "status"
 msgstr "Статус"
 
 #: task_manager/tasks/models.py:37
-msgid "assignee"
+msgid "executor"
 msgstr "Исполнитель"
 
 #: task_manager/tasks/models.py:44
@@ -341,3 +341,9 @@ msgstr "Войти"
 #: task_manager/views.py:32
 msgid "You're logged out."
 msgstr "Вы разлогинены"
+
+#~ msgid "Assignee"
+#~ msgstr "Исполнитель"
+
+#~ msgid "assignee"
+#~ msgstr "Исполнитель"
