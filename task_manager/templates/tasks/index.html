@@ -14,7 +14,7 @@
 	      <th scope="col">{% trans 'Name' %}</th>
           <th scope="col">{% trans 'Status' %}</th>
           <th scope="col">{% trans 'Author' %}</th>
-          <th scope="col">{% trans 'Assignee' %}</th>
+          <th scope="col">{% trans 'Executor' %}</th>
 	      <th scope="col">{% trans 'Creation date' %}</th>
 	      <th></th>
 	    </tr>
@@ -26,7 +26,7 @@
 			<td><a href="{% url 'task_show' task.id %}">{{ task.name }}</td>
             <td>{{ task.status }}</td>
             <td>{{ task.author }}</td>
-            <td>{{ task.assignee }}</td>
+            <td>{{ task.executor }}</td>
 			<td>{{ task.created_at }}</td>
 	      	<td>
 				<a class="btn btn-info btn-sm mr-2 edit-button" href="{% url 'task_update' task.id %}">

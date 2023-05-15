@@ -29,7 +29,7 @@ class TasksTest(TestCase):
         )
         self.task = Task.objects.create(
             name=self.name,
-            assignee=self.user,
+            executor=self.user,
             author=self.user,
             status=self.status,
         )
@@ -57,7 +57,7 @@ class TasksTest(TestCase):
     #         reverse_lazy('task_create'),
     #         {'name': 'testTask',
     #         'status': self.status,
-    #         'assignee': self.user},
+    #         'executor': self.user},
     #     )
     #     self.assertEqual(response.status_code, HTTPStatus.OK)
 

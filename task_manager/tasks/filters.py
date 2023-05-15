@@ -23,11 +23,11 @@ class TaskFilter(FilterSet):
         label=_('Label'),
         field_name='labels'
     )
-    assignees = User.objects.all()
-    assignee = ModelChoiceFilter(
-        queryset=assignees,
-        label=_('Assignee'),
-        field_name='assignee'
+    executors = User.objects.all()
+    executor = ModelChoiceFilter(
+        queryset=executors,
+        label=_('Executor'),
+        field_name='executor'
     )
     owned_tasks = BooleanFilter(
         method='get_task_owner',
@@ -42,4 +42,4 @@ class TaskFilter(FilterSet):
 
     class Meta:
         model = Task
-        fields = ['status', 'assignee', 'label', 'owned_tasks']
+        fields = ['status', 'executor', 'label', 'owned_tasks']
