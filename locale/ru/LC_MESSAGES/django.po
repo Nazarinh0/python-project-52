@@ -272,7 +272,7 @@ msgstr "Регистрация"
 
 #: task_manager/users/views.py:22
 msgid "Register"
-msgstr "Зарегистрироваться"
+msgstr "Зарегистрировать"
 
 #: task_manager/users/views.py:37
 msgid "You can't update other users"
