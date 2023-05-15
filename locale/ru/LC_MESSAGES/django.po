@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 18:12+0000\n"
+"POT-Creation-Date: 2023-05-15 18:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid "Creation date"
 msgstr "Дата создания"
 
 #: task_manager/labels/views.py:16 task_manager/templates/labels/index.html:5
-#: task_manager/templates/navbar.html:10
+#: task_manager/templates/navbar.html:14
 #: task_manager/templates/tasks/show.html:40
 msgid "Labels"
 msgstr "Метки"
@@ -83,7 +83,7 @@ msgstr "Удаление метки"
 msgid "Yes, delete"
 msgstr "Да, удалить"
 
-#: task_manager/statuses/views.py:16 task_manager/templates/navbar.html:9
+#: task_manager/statuses/views.py:16 task_manager/templates/navbar.html:12
 #: task_manager/templates/statuses/index.html:5
 msgid "Statuses"
 msgstr "Статусы"
@@ -135,7 +135,7 @@ msgstr "Исполнитель"
 msgid "Only my tasks"
 msgstr "Только мои задачи"
 
-#: task_manager/tasks/views.py:20 task_manager/templates/navbar.html:8
+#: task_manager/tasks/views.py:20 task_manager/templates/navbar.html:10
 #: task_manager/templates/tasks/index.html:5
 msgid "Tasks"
 msgstr "Задачи"
@@ -228,20 +228,20 @@ msgstr "Редактировать"
 msgid "Delete"
 msgstr "Удалить"
 
-#: task_manager/templates/navbar.html:6
+#: task_manager/templates/navbar.html:7
 #: task_manager/templates/users/index.html:5
 msgid "Users"
 msgstr "Пользователи"
 
-#: task_manager/templates/navbar.html:11
+#: task_manager/templates/navbar.html:15
 msgid "Logout"
 msgstr "Выход"
 
-#: task_manager/templates/navbar.html:14
+#: task_manager/templates/navbar.html:18
 msgid "Log In"
 msgstr "Вход"
 
-#: task_manager/templates/navbar.html:15
+#: task_manager/templates/navbar.html:19
 msgid "Sign Up"
 msgstr "Регистрация"
 
@@ -310,7 +310,11 @@ msgstr "Удаление пользователя"
 msgid "You are logged in"
 msgstr "Вы залогинены"
 
-#: task_manager/views.py:21 task_manager/views.py:22
+#: task_manager/views.py:21
+msgid "Authorisation"
+msgstr "Вход"
+
+#: task_manager/views.py:22
 msgid "Login"
 msgstr "Войти"
 
