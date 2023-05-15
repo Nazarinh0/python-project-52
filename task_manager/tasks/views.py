@@ -32,7 +32,7 @@ class TaskDetailView(LoginRequiredMixin, DetailView):
     }
 
 
-class TaskCreateView(LoginRequiredMixin, CreateView):
+class TaskCreateView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     template_name = 'form.html'
     form_class = TaskForm
 
