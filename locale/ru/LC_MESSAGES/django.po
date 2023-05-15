@@ -218,7 +218,7 @@ msgstr "ID"
 #: task_manager/templates/tasks/show.html:50
 #: task_manager/templates/users/index.html:26
 msgid "Edit"
-msgstr "Редактировать"
+msgstr "Изменить"
 
 #: task_manager/templates/labels/index.html:28
 #: task_manager/templates/statuses/index.html:28
