@@ -235,13 +235,11 @@ msgstr "Пользователи"
 
 #: task_manager/templates/navbar.html:11
 msgid "Logout"
-msgstr "Выйти"
+msgstr "Выход"
 
 #: task_manager/templates/navbar.html:14
-#, fuzzy
-#| msgid "Log in"
 msgid "Log In"
-msgstr "Войти"
+msgstr "Вход"
 
 #: task_manager/templates/navbar.html:15
 msgid "Sign Up"
