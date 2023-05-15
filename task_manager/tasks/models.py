@@ -29,7 +29,7 @@ class Task(models.Model):
         related_name='status',
         verbose_name=_('status')
     )
-    assignee = models.ForeignKey(
+    executor = models.ForeignKey(
         User,
         blank=True,
         on_delete=models.PROTECT,
