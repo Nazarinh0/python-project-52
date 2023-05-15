@@ -107,7 +107,7 @@ msgstr "Редактирование статуса"
 
 #: task_manager/statuses/views.py:52
 msgid "Status deleted successfully"
-msgstr "Статус успешно удален"
+msgstr "Статус успешно удалён"
 
 #: task_manager/statuses/views.py:55
 msgid "You can't delete this status, because some task is using it"
@@ -300,7 +300,7 @@ msgstr "Пользователей не может быть удален, т.к.
 
 #: task_manager/users/views.py:61
 msgid "User deleted successfully"
-msgstr "Пользователь успешно удален"
+msgstr "Пользователь успешно удалён"
 
 #: task_manager/users/views.py:64
 msgid "Deleting user"
