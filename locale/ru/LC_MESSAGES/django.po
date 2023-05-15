@@ -72,7 +72,7 @@ msgstr "Метка успешно создана"
 
 #: task_manager/labels/views.py:55
 msgid "You can't delete this label, because some task is using it"
-msgstr "Вы не можете удалить эту метку, так как она используется задачей"
+msgstr "Невозможно удалить метку, потому что она используется"
 
 #: task_manager/labels/views.py:58
 msgid "Deleting labels"
@@ -99,7 +99,7 @@ msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:38
 msgid "Status edited successfully"
-msgstr "Статус успешно изменен"
+msgstr "Статус успешно изменён"
 
 #: task_manager/statuses/views.py:41
 msgid "Editing status"
@@ -111,7 +111,7 @@ msgstr "Статус успешно удален"
 
 #: task_manager/statuses/views.py:55
 msgid "You can't delete this status, because some task is using it"
-msgstr "Вы не можете удалить этот статус, так как он используется задачей"
+msgstr "Невозможно удалить статус, потому что он используется"
 
 #: task_manager/statuses/views.py:58
 msgid "Deleting status"
@@ -264,7 +264,7 @@ msgstr "Полное имя"
 
 #: task_manager/users/views.py:18
 msgid "User created successfully"
-msgstr "Пользователь успешно создан"
+msgstr "Пользователь успешно зарегистрирован"
 
 #: task_manager/users/views.py:21
 msgid "Registration"
@@ -276,7 +276,7 @@ msgstr "Зарегистрировать"
 
 #: task_manager/users/views.py:37
 msgid "You can't update other users"
-msgstr "Вы не можете редактировать других пользователей"
+msgstr "У вас нет прав для изменения другого пользователя."
 
 #: task_manager/users/views.py:38 task_manager/users/views.py:55
 msgid "You are not logged in! Please log in"
@@ -284,7 +284,7 @@ msgstr "Вы залогинены"
 
 #: task_manager/users/views.py:41
 msgid "User edited successfully"
-msgstr "Пользователь успешно изменен"
+msgstr "Пользователь успешно изменён"
 
 #: task_manager/users/views.py:45
 msgid "Editing user"
