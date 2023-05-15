@@ -158,7 +158,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://127.0.0.1',
     'https://localhost',
     'https://0.0.0.0',
-    'webserver',
+    'http://webserver',
 ]
 
 ROLLBAR = {
