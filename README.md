@@ -6,6 +6,7 @@
 A simple and flexible task management web application
 </p>
 
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Nazarinh0/python-project-52/workflows/hexlet-check/badge.svg)](https://github.com/Nazarinh0/python-project-52/actions)
 [![Linter check](https://github.com/Nazarinh0/python-project-52/workflows/linter-check/badge.svg)](https://github.com/Nazarinh0/python-project-52/actions/workflows/linter-check.yml)
