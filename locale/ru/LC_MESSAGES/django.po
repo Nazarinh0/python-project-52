@@ -103,7 +103,7 @@ msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:38
 msgid "Status edited successfully"
-msgstr "Статус успешно изменён"
+msgstr "Статус успешно изменен"
 
 #: task_manager/statuses/views.py:41
 msgid "Editing status"
@@ -304,7 +304,7 @@ msgstr "Вы залогинены"
 
 #: task_manager/users/views.py:41
 msgid "User edited successfully"
-msgstr "Пользователь успешно изменён"
+msgstr "Пользователь успешно изменен"
 
 #: task_manager/users/views.py:45
 msgid "Editing user"
