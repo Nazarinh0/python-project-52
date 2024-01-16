@@ -5,8 +5,8 @@ from django.contrib.auth import get_user_model
 from faker import Faker
 from task_manager.statuses.models import Status
 
-User = get_user_model()
 
+User = get_user_model()
 
 class StatusesTest(TestCase):
     """Test statuses."""
