@@ -5,8 +5,8 @@ from django.contrib.auth import get_user_model
 from faker import Faker
 from task_manager.labels.models import Label
 
-User = get_user_model()
 
+User = get_user_model()
 
 class LabelsTest(TestCase):
     """Test labels."""
