@@ -7,8 +7,8 @@ from task_manager.labels.models import Label
 from task_manager.statuses.models import Status
 from task_manager.tasks.models import Task
 
-User = get_user_model()
 
+User = get_user_model()
 
 class TaskFilter(FilterSet):
     statuses = Status.objects.all()
