@@ -6,8 +6,8 @@ from faker import Faker
 from task_manager.tasks.models import Task
 from task_manager.statuses.models import Status
 
-User = get_user_model()
 
+User = get_user_model()
 
 class TasksTest(TestCase):
     """Test tasks."""
